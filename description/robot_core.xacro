@@ -74,7 +74,7 @@
 
     <!-- LEFT FRONT WHEEL -->
 
-    <joint name="left_front_wheel_joint" type="continuous">
+    <joint name="left_front_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="left_front_wheel"/>
         <origin xyz="-0.08 -0.085 0" rpy="${pi/2} 0 0"/>
@@ -88,11 +88,11 @@
             </geometry>
             <material name="black"/>
         </visual>
-        <collision>
+        <!--<collision>
             <geometry>
                 <sphere radius="0.0225" />
             </geometry>
-        </collision>
+        </collision> -->
         <xacro:inertial_cylinder mass="0.1" length="0.018" radius="0.0225">
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
@@ -139,7 +139,7 @@
 
     <!-- RIGHT FRONT WHEEL -->
 
-    <joint name="right_front_wheel_joint" type="continuous">
+    <joint name="right_front_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="right_front_wheel"/>
         <origin xyz="-0.08 0.085 0" rpy="${pi/2} 0 0"/>
@@ -153,11 +153,11 @@
             </geometry>
             <material name="black"/>
         </visual>
-        <collision>
+        <!--<collision>
             <geometry>
                 <sphere radius="0.0225" />
             </geometry>
-        </collision>
+        </collision>-->
         <xacro:inertial_cylinder mass="0.1" length="0.018" radius="0.0225">
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
