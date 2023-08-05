@@ -2,20 +2,17 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <gazebo>
-        <plugin name="skid_steer_drive" filename="libgazebo_ros_diff_drive.so">
+        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
             <!-- Update rate -->
             <update_rate>500</update_rate>
 
             <!-- wheels -->
             <num_wheel_pairs>2</num_wheel_pairs>
-            <left_joint>left_front_wheel_joint</left_joint>
-            <right_joint>right_front_wheel_joint</right_joint>
             <left_joint>left_rear_wheel_joint</left_joint>
             <right_joint>right_rear_wheel_joint</right_joint>
 
             <!-- kinematics -->
-            <wheel_separation>0.17</wheel_separation>
             <wheel_separation>0.17</wheel_separation>
             <wheel_diameter>0.045</wheel_diameter>
             <max_wheel_torque>200</max_wheel_torque>
