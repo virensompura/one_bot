@@ -4,7 +4,8 @@
 
 ### Spawning the Robot in Gazebo 
 
-    $ ros2 launch one_bot launch_sim.launch.py world:=<path_of_.world_file>
+    $ ros2 launch one_bot launch_sim.launch.py world:=<path_of_.world_file>   [For Simuilation]
+    $ ros2 launch one_bot launch_sim.launch.py 
 
 ### Launch Robot 
     
